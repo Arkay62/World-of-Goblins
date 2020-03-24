@@ -27,7 +27,10 @@
         // permet l'import d'ES modules
         "esModuleInterop": true,
         // détermine le javascript utilisé
-        "module": "esnext"
+        "module": "esnext",
+        "types": ["node"]
+        //"baseUrl": "types",
+        //"typeRoots": ["types"]
     },
     // path des fichiers à chercher
     "include": [

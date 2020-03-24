@@ -30,6 +30,10 @@ export default class Arme {
         this._criticalChance = cc;
     }
 
+    getDelta(): number {
+        return this.degatsMax - this.degatsMin;
+    }
+
     afficherStats() : string {
         let answer: string = `Voici les stats de cette arme :
         > Dégâts minimums : ${this.degatsMin}

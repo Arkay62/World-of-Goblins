@@ -1,11 +1,14 @@
 import Personnage from './Personnage';
 import Arme from './Arme';
+import Arme1 from './Arme1';
+import Arme2 from './Arme2';
 
 export default class Monstre extends Personnage {
 
-    constructor(arme: Arme){
-        super("", arme);
+    constructor(){
+        super("", new Arme());
         this.name = this.createName();
+        this.arme = Math.floor(Math.random() * 2) == 0 ? new Arme1() : new Arme2();
     }
 
     createName(): string {
